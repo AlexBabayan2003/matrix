@@ -4,12 +4,15 @@ fun main() {
         listOf(1.0, 1.1, 1.2),
         listOf(2.0, 2.1, 2.2)
     )
-
+    //1.
     val diagonal = List(matrix.size) { i -> matrix[i][i] }
+    //2.
     val antiDiagonal = List(matrix.size) { i -> matrix[i][matrix.size - i - 1] }
 
+    println("main diagonal $diagonal")
+    println("secondary diagonal $antiDiagonal")
 
-    //upper and downer triangles for main diagonal
+    //2 and 3.
 
     val upperTriangle = mutableListOf<List<Double>>()
     val lowerTriangle = mutableListOf<List<Double>>()
@@ -32,6 +35,11 @@ fun main() {
             }
         }
     }
+    println("Main diagonal and the upper elements $upperTriangle")
+    println("Main diagonal and the lower elements $lowerTriangle")
+
+
+
 }
 
 
